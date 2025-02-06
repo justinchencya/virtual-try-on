@@ -75,8 +75,11 @@ def generate_image_flux(prompt, save_filename):
             fetch_and_save_image(image_url, save_file_path)        
             print(f"Image saved to {save_file_path}")
             break
+        elif result["status"] == "Pending":
+            print(f"Pending: {result['status']}")
         else:
             print(f"Status: {result['status']}")    
+            break
 
     return save_file_path
 
