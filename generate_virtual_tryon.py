@@ -19,7 +19,7 @@ def get_virtual_try_on(
     garment_filename: str,
     save_filename: str,
     category: str,
-    nsfw_filter: bool = True,
+    nsfw_filter: bool = False,
     cover_feet: bool = False,
     adjust_hands: bool = False,
     restore_background: bool = False,
